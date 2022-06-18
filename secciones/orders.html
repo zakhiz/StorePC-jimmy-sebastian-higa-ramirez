@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="icon" href="../img/icono.jpg">
+    <title>Orders</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__title fontText">Store Pc</h1>
+    </header>
+
+    <nav class="nav-container back-color">
+        <ul class="nav__ul-container">
+            <li class="nav__li">
+                <a class="nav__li-a" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav__li">
+                <a class="nav__li-a" href="Products.html">Products</a>
+            </li>
+
+            <li class="nav__li">
+                <a class="nav__li-a" href="giftCard.html">Gift Card's</a>
+            </li>
+
+            <li class="nav__li">
+                <a class="nav__li-a" href="funkoWorld.html">Funko World</a>
+            </li>
+
+            <li class="nav__li">
+                <a class="nav__li-a" href="orders.html">Orders</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main class="main-products">
+        <form action="#" class="orders">
+            <input type="text" placeholder="Ingrese su nombre" class="input-order border">
+
+            <input type="text" placeholder="direccion"class="input-order border" >
+            <input type="number" placeholder="altura" class="input-order border">
+
+            <input type="number" placeholder="Telefono" class="input-order border">
+
+            <label for="email" class="labeli">Ingrese su email:
+                <input type="text" name="email" placeholder="aaaa@gmail.com" class="input-order border labeli">
+            </label>
+
+            <div class="input-order labeli">
+                <label for="Dia">Elegi el dia de entrega
+                    <select name="Dia" >
+                        <option value="lunes">lunes</option>
+                        <option value="martes">martes</option>
+                        <option value="miercoles">miercoles</option>
+                        <option value="jueves">jueves</option>
+                        <option value="viernes">viernes</option>
+                    </select>
+
+                </label>
+
+            </div>
+            <div class="input-order">
+                <label for="turno" >elegir turno de entrega
+                    <div>turno Mañana 8am-15pm
+                        <input type="radio" name="turno" value="maniana">
+                    </div>
+                    <div>turno tarde 15pm-22pm
+                        <input type="radio" name="turno" value="tarde">
+                    </div>
+                </label>
+            </div>
+           <div>
+            <textarea placeholder="Nota para el repartidor" class="repartidor border"></textarea>
+            <input type="submit" value="enviar" class="textarea form fontCopy" > 
+        </div>
+
+
+            <div class="input-order"> Quisieras recibir notificaciones de las ultimas ofertas y novedades
+                <input type="checkbox" name="acepta" value="1"></div>
+            <div class="formulario" >
+            <input type="submit" value="realizar envio" class="form fontCopy">
+            <input type="reset" value="cancelar envio"  class="form fontCopy">
+            </div>
+        </form>
+    </main>
+    <footer class="back-color">
+        <div class="sociales">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="icon instagram">
+
+            <img src="https://img.icons8.com/fluency/48/undefined/twitter.png" />
+        </div>
+        <p class="fontCopy copyr">©2022 StorePC</p>
+        <div>
+            <img class="pago" src="https://img.icons8.com/fluency/48/000000/paypal.png">
+
+            <img class="pago" src="https://img.icons8.com/color/48/000000/visa.png">
+
+            <img class="pago" src="https://img.icons8.com/color/48/000000/mastercard.png">
+
+            <img class="pago" src="https://img.icons8.com/color/48/000000/mercado-pago.png">
+        </div>
+
+    </footer>
+</body>
+
+</html>
