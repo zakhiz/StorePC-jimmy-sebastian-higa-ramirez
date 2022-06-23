@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Koulen&family=Poppins:wght@200&family=Roboto+Mono:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 
 
@@ -13,6 +13,9 @@
 }
 .fontText{
     font-family: 'Roboto Mono', monospace;
+}
+.fontPage{
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .fontTittle{
     font-family: 'Koulen', cursive;
@@ -35,7 +38,7 @@
         .imagenesHome{
             height: 70%;
             width:100%;
-            transition: transform .6s;
+            transition: transform .1s;
         }
         .imagenesHome:hover{
             transform: scale(1.2);
@@ -54,6 +57,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .encabezado__title{
     font-size: 2.5rem;
     text-shadow: 4px 4px 10px #000;
@@ -67,7 +71,7 @@ body{
     }
 }
 
-@media(min-width:1280px){
+@media(min-width:1024px){
     .encabezado{
     height: 40vh;
 }
@@ -79,73 +83,22 @@ body{
 
 
 /*----------------------------------------------------------------------------------------------------------------*/
-.nav-container{
-  
-    height: 20vh;
-    margin: 40px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.nav__ul-container{
-    display: flex;
-    flex-direction: column;
+.iconos{
+    margin: 0 10px;
+    width: 70px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    transition: transform .4s;
 }
-@media(min-width:768px){
-    .nav__ul-container{
-        flex-direction: row;
-    }
- }
- 
- @media(min-width:1280px){
-    .nav__ul-container{
-        flex-direction: row;
-    }
- }
-.nav__li{
-    list-style-type: none;
-}
-.nav__li-a{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-shadow: 2px 3px 6px #000;
-    color: #000;
-    margin: 0 25px;
-    display: flex;  
-   
-    
-}
-
-@media(min-width:768px){
-    .nav__li-a{
-        font-size: 1.4rem;
-    }
-
- }
- 
- @media(min-width:1280px){
-    .nav__li-a{
-        font-size: 2.2rem;
-        padding: 0 10px;
-        border-radius: 20px;
-        border: 2px solid #7b2cbf;
-        box-shadow: 0 1px 10px #5a189a;
-        transition: border .2s;
-    }
-
-    .nav__li-a:hover{
-        border: 3px solid #7b2cbf;
-        box-shadow: 0 1px 25px #5a189a;
-    
-}
+.iconos:hover{
+   transform: scale(1.2);
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 /*main home*/
 .info{
- margin: 40px;
+ margin: 15px;
  border-radius: 30px;
  display: flex;
  justify-content: center;
@@ -158,7 +111,7 @@ body{
  }
 }
  
- @media(min-width:1280px){
+ @media(min-width:1024px){
    .info{
     flex-wrap: nowrap;
    }
@@ -176,7 +129,7 @@ body{
 
 
 .foto__referencia{
-    width:100%;
+    width:90%;
     height: 25vh;
     border-radius: 30px;
     margin: 40px;
@@ -189,7 +142,7 @@ body{
 
 }
 
-@media(min-width:1280px){
+@media(min-width:1024px){
     .foto__referencia{
         width:100%;
         height: 50vh;
@@ -226,10 +179,8 @@ body{
   
 }
 
-
-
 .articulos__novedades{
-    text-shadow: 1px 2px 3px #000;
+    text-shadow: 2px 2px 3px #000;
     text-align: center;
     font-size:3rem;
 }
@@ -240,6 +191,87 @@ body{
 
 }
 
+#carouselExampleIndicators{
+    width: 100%;
+    margin: 20px auto
+    
+}
+
+@media (min-width:768px){
+    #carouselExampleIndicators{
+        width: 80%;
+        margin: 20px auto
+        
+    }
+}
+
+@media (min-width:1024px){
+    #carouselExampleIndicators{
+        width: 60%;
+        margin: 20px auto
+    }
+}
+
+#carouselExampleControls{
+    width: 100%;
+    margin: 20px auto
+}
+@media (min-width:768px){
+    #carouselExampleControls{
+        width: 80%;
+        margin: 20px auto
+    }
+}
+
+@media (min-width:1024px){
+    #carouselExampleControls{
+        width: 60%;
+        margin: 20px auto
+    }
+}
+
+.caro{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 40px;
+}
+@media(min-width:768px){
+    .caro{
+        margin: 15px;
+        padding: 30px;
+        border-radius: 40px;
+    }
+   }
+    
+    @media(min-width:1024px){
+        .caro{
+            margin: 40px;
+            padding: 30px;
+            border-radius: 40px;
+        }
+    }
+.ofoto{
+    width: 100%;
+    height: 20vh;
+}
+@media (min-width:768px){
+    .ofoto{
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+@media (min-width:1024px){
+    .ofoto{
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+
+
+
+
 /*------------------------------------------------------------productos---------------------------------------------------------------------------*/
   /*main productos*/
   .products{
@@ -248,11 +280,25 @@ body{
     border-radius: 30px;
   }
   .funko-banner{
-    margin: 40px;
+    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  @media(min-width:768px){
+    .funko-banner{
+        margin: 30px;
+       
+    }
+}
+
+@media(min-width:1024px){
+    .funko-banner{
+        margin: 40px;
+        
+    }
+}
+
   .funko__foto{
     width: 100%;
     border-radius: 20%;
@@ -275,7 +321,7 @@ body{
 }
 }
 
-@media(min-width:1280px){
+@media(min-width:1024px){
     .funkoWorld-title{
         margin: 40px;
         font-size: 5rem;
@@ -374,8 +420,21 @@ body{
 /*----------------------------------------------------------------------------------------------------------------------*/
 .products__foto{
     width: 100%;
-    height: 60vh;
+    height: 20vh;
     border-radius: 20%;
+}
+@media(min-width:768px){
+    .products__foto{
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+@media(min-width:1024px){
+    .products__foto{
+        width: 100%;
+        height: 50vh;
+    }
 }
 /*----------------------------------------------------------------------------------------------------------------*/
 .orders{
