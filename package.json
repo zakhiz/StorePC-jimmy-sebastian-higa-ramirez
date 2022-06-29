@@ -1,0 +1,26 @@
+{
+  "name": "tiendav1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/tienda.scss css/tienda.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakhiz/StorePC-jimmy-sebastian-higa-ramirez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakhiz/StorePC-jimmy-sebastian-higa-ramirez/issues"
+  },
+  "homepage": "https://github.com/zakhiz/StorePC-jimmy-sebastian-higa-ramirez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}
