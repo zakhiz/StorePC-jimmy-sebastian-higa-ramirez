@@ -1,0 +1,16 @@
+@import '../base/variables';
+
+.titleProduct-global{
+    margin: 60px;
+    border-radius: 40px;
+    color: $black;
+    text-shadow: 0 5px 8px $textShadow,0 5px 8px $textShadow;
+    font-size: 2rem;
+    text-align: center;
+    @media(min-width:768px){
+            font-size:3rem;
+    }
+    @media(min-width:1024px){
+            font-size: 4rem;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../base/variables';
+
+.global-title{
+    margin: 40px;
+    font-size: 2rem;
+    font-family: $fontProduct;
+    background: $fondo;
+    text-shadow: 2px 2px 6px $black;
+    text-align: center;
+    border-radius: 50px;
+    
+
+     @media(min-width:768px){
+            margin: 40px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 6px $black;
+    }
+     @media(min-width:1024px){
+            margin: 40px;
+            font-size: 5rem;
+            text-shadow: 2px 2px 6px $black;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../base/variables';
+
+.encabezado{
+    
+    background: url(../img/nav12.jpg);
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       .title{
+                font-size: 2.5rem;
+                text-shadow: 4px 4px 10px $black;
+                font-family: $fontTitle;
+              
+
+                @media(min-width:768px){
+                     font-size: 5.2rem;
+                }
+                @media(min-width:1024px){
+                     font-size: 7rem;
+                     
+                }
+            }
+ 
+    @media(min-width:768px){
+        height: 30vh;
+   }
+    @media(min-width:1024px){
+        height: 40vh;
+   }
+
+}

@@ -1,0 +1,60 @@
+@import '../base/variables';
+
+
+.info{
+    background: $fondo;
+    margin: 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media(min-width:768px){
+           flex-wrap: wrap;
+       }
+     @media(min-width:1024px){
+           flex-wrap: nowrap;
+       }
+       .subtt{
+        text-align: center;
+        font-size: 3rem;
+        font-family: $fontTitle;
+        text-shadow: 1px 3px 4px $black;
+    }
+    .nosotros{
+        text-align: center;
+        padding: 1.5rem;
+        font-family: $fontText;
+    }
+
+    .foto-referencia{
+        width:90%;
+        height: 25vh;
+        border-radius: 30px;
+        margin: 40px;
+
+        @media(min-width:768px){
+                width:100%;
+                height: 40vh;
+        }
+        
+       @media(min-width:1024px){
+               width:50%;
+             height: 50vh;
+        }
+    }   
+}
+
+.articulos-novedades{
+    text-shadow: 2px 2px 3px $black;
+    text-align: center;
+    font-size:3rem;
+    font-family: $fontTitle;
+}
+.articulos-ofertas{
+    text-shadow: 2px 3px 3px $black;
+    font-size: 3rem;
+    text-align: center;
+    font-family: $fontTitle;
+
+}

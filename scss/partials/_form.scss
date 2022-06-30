@@ -1,0 +1,58 @@
+@import '../base/variables';
+
+
+
+.orders{
+    background: $fondo;
+    margin: 40px;
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .input-order{
+        margin: 10px;
+        padding: .4rem; 
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .labeli{
+        margin-top: 10px;
+    }
+    .border{
+        outline: none;
+        box-shadow: 0 1px 20px $shadow;
+        border-radius: 5%;
+        border: 2px solid $border;
+        &:focus{
+            padding: .9rem;
+        }
+    }
+    .repartidor{
+        resize: none;
+        height: 10vh;
+        width: 100%;
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .textarea{
+        margin-top: 10px;
+      
+      }
+      .formulario{
+        margin: 5px;
+
+        .form{
+            background: $fondo;
+            padding: 5px;
+            margin: 5px;
+            outline: none;
+            border-radius: 10%;
+            border: 2px solid $border;
+            box-shadow: 0 1px 15px $shadow;
+        }
+        
+    }
+}

@@ -6,21 +6,6 @@
   padding: 0;
   font-size: 16px; }
 
-.back-color {
-  background: #f8f9fa; }
-
-.fontText {
-  font-family: 'Roboto Mono', monospace; }
-
-.fontPage {
-  font-family: 'Kdam Thmor Pro', sans-serif; }
-
-.fontTittle {
-  font-family: 'Koulen', cursive; }
-
-.fontCopy {
-  font-family: 'Poppins', sans-serif; }
-
 body {
   background: #dee2e6; }
 
@@ -33,7 +18,8 @@ body {
   align-items: center; }
   .encabezado .title {
     font-size: 2.5rem;
-    text-shadow: 4px 4px 10px #000; }
+    text-shadow: 4px 4px 10px #000;
+    font-family: "Kdam Thmor Pro", sans-serif; }
     @media (min-width: 768px) {
       .encabezado .title {
         font-size: 5.2rem; } }
@@ -57,7 +43,32 @@ body {
   .iconos:hover {
     transform: scale(1.2); }
 
+.global-banner {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .global-banner {
+      margin: 30px; } }
+  @media (min-width: 1024px) {
+    .global-banner {
+      margin: 40px; } }
+  .global-banner .global-foto {
+    width: 100%;
+    height: 20vh;
+    border-radius: 20%; }
+    @media (min-width: 768px) {
+      .global-banner .global-foto {
+        width: 100%;
+        height: 30vh; } }
+    @media (min-width: 1024px) {
+      .global-banner .global-foto {
+        width: 100%;
+        height: 50vh; } }
+
 .info {
+  background: #f8f9fa;
   margin: 15px;
   border-radius: 30px;
   display: flex;
@@ -73,160 +84,114 @@ body {
   .info .subtt {
     text-align: center;
     font-size: 3rem;
+    font-family: "Kdam Thmor Pro", sans-serif;
     text-shadow: 1px 3px 4px #000; }
-  .info .nosotros__p {
+  .info .nosotros {
     text-align: center;
-    padding: 1.5rem; }
-  .info .foto__referencia {
+    padding: 1.5rem;
+    font-family: "Roboto Mono", monospace; }
+  .info .foto-referencia {
     width: 90%;
     height: 25vh;
     border-radius: 30px;
     margin: 40px; }
     @media (min-width: 768px) {
-      .info .foto__referencia {
+      .info .foto-referencia {
         width: 100%;
         height: 40vh; } }
     @media (min-width: 1024px) {
-      .info .foto__referencia {
+      .info .foto-referencia {
         width: 50%;
         height: 50vh; } }
-        
-        .articulos__novedades{
-          text-shadow: 2px 2px 3px #000;
-          text-align: center;
-          font-size:3rem;
-      }
-      .articulos__ofertas{
-          text-shadow: 2px 3px 3px #000;
-          font-size: 3rem;
-          text-align: center;
-      
-      }
-      
-      #carouselExampleIndicators{
-          width: 100%;
-          margin: 20px auto
-          
-      }
-      
-      @media (min-width:768px){
-          #carouselExampleIndicators{
-              width: 80%;
-              margin: 20px auto
-              
-          }
-      }
-      
-      @media (min-width:1024px){
-          #carouselExampleIndicators{
-              width: 60%;
-              margin: 20px auto
-          }
-      }
-      
-      #carouselExampleControls{
-          width: 100%;
-          margin: 20px auto
-      }
-      @media (min-width:768px){
-          #carouselExampleControls{
-              width: 80%;
-              margin: 20px auto
-          }
-      }
-      
-      @media (min-width:1024px){
-          #carouselExampleControls{
-              width: 60%;
-              margin: 20px auto
-          }
-      }
-      
-      .caro{
-          margin: 15px;
-          padding: 30px;
-          border-radius: 40px;
-      }
-      @media(min-width:768px){
-          .caro{
-              margin: 15px;
-              padding: 30px;
-              border-radius: 40px;
-          }
-         }
-          
-          @media(min-width:1024px){
-              .caro{
-                  margin: 40px;
-                  padding: 30px;
-                  border-radius: 40px;
-              }
-          }
-      .ofoto{
-          width: 100%;
-          height: 20vh;
-      }
-      @media (min-width:768px){
-          .ofoto{
-              width: 100%;
-              height: 30vh;
-          }
-      }
-      
-      @media (min-width:1024px){
-          .ofoto{
-              width: 100%;
-              height: 40vh;
-          }
-      }
 
-.funko-banner {
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .funko-banner {
-      margin: 30px; } }
-  @media (min-width: 1024px) {
-    .funko-banner {
-      margin: 40px; } }
-  .funko-banner .products__foto {
-    width: 100%;
-    height: 20vh;
-    border-radius: 20%; }
-    @media (min-width: 768px) {
-      .funko-banner .products__foto {
-        width: 100%;
-        height: 30vh; } }
-    @media (min-width: 1024px) {
-      .funko-banner .products__foto {
-        width: 100%;
-        height: 50vh; } }
+.articulos-novedades {
+  text-shadow: 2px 2px 3px #000;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Kdam Thmor Pro", sans-serif; }
 
-.funko__foto {
+.articulos-ofertas {
+  text-shadow: 2px 3px 3px #000;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif; }
+
+#carouselExampleIndicators {
   width: 100%;
-  border-radius: 20%;
-  border: 5px solid #f8f9fa; }
+  margin: 20px auto; }
 
-.funkoWorld-title {
+@media (min-width: 768px) {
+  #carouselExampleIndicators {
+    width: 80%;
+    margin: 20px auto; } }
+
+@media (min-width: 1024px) {
+  #carouselExampleIndicators {
+    width: 60%;
+    margin: 20px auto; } }
+
+#carouselExampleControls {
+  width: 100%;
+  margin: 20px auto; }
+
+@media (min-width: 768px) {
+  #carouselExampleControls {
+    width: 80%;
+    margin: 20px auto; } }
+
+@media (min-width: 1024px) {
+  #carouselExampleControls {
+    width: 60%;
+    margin: 20px auto; } }
+
+.caro {
+  margin: 15px;
+  padding: 30px;
+  border-radius: 40px;
+  background: #f8f9fa; }
+  @media (min-width: 768px) {
+    .caro {
+      margin: 15px;
+      padding: 30px;
+      border-radius: 40px; } }
+  @media (min-width: 1024px) {
+    .caro {
+      margin: 40px;
+      padding: 30px;
+      border-radius: 40px; } }
+
+.ofoto {
+  width: 100%;
+  height: 20vh; }
+  @media (min-width: 768px) {
+    .ofoto {
+      width: 100%;
+      height: 30vh; } }
+  @media (min-width: 1024px) {
+    .ofoto {
+      width: 100%;
+      height: 40vh; } }
+
+.global-title {
   margin: 40px;
   font-size: 2rem;
+  font-family: "Koulen", cursive;
+  background: #f8f9fa;
   text-shadow: 2px 2px 6px #000;
   text-align: center;
   border-radius: 50px; }
   @media (min-width: 768px) {
-    .funkoWorld-title {
+    .global-title {
       margin: 40px;
       font-size: 3rem;
       text-shadow: 2px 2px 6px #000; } }
   @media (min-width: 1024px) {
-    .funkoWorld-title {
+    .global-title {
       margin: 40px;
       font-size: 5rem;
       text-shadow: 2px 2px 6px #000; } }
 
-.title-marvel {
+.titleProduct-global {
   margin: 60px;
   border-radius: 40px;
   color: #000;
@@ -234,24 +199,10 @@ body {
   font-size: 2rem;
   text-align: center; }
   @media (min-width: 768px) {
-    .title-marvel {
+    .titleProduct-global {
       font-size: 3rem; } }
-  @media (min-width: 1280px) {
-    .title-marvel {
-      font-size: 4rem; } }
-
-.title-kimet {
-  margin: 60px;
-  border-radius: 40px;
-  color: #000;
-  text-shadow: 0 5px 8px #bb06fd, 0 5px 8px #bb06fd;
-  font-size: 2rem;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .title-kimet {
-      font-size: 3rem; } }
-  @media (min-width: 1280px) {
-    .title-kimet {
+  @media (min-width: 1024px) {
+    .titleProduct-global {
       font-size: 4rem; } }
 
 .orders {
@@ -299,7 +250,8 @@ footer {
   height: 20vh;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  background: #f8f9fa; }
 
 .sociales p {
   text-align: center; }
@@ -310,7 +262,8 @@ footer {
 
 .copyr {
   text-align: center;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif; }
   @media (min-width: 768px) {
     .copyr {
       font-size: 1.5rem; } }
