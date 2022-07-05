@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Koulen&family=Poppins:wght@200&family=Roboto+Mono:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-/* fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
+.boton-style, .orders .boton {
+  outline: none;
+  border-radius: 10%;
+  border: 2px solid #5a189a;
+  box-shadow: 0 1px 15px #7b2cbf; }
+
+.title-style, .titleProduct-global {
+  border-radius: 40px;
+  color: #000;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 0 5px 8px #bb06fd; }
+
+/*resets style , fonts y background body*/
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +22,16 @@
 body {
   background: #dee2e6; }
 
+/*background img, y icon home*/
 .encabezado {
   background: url(../img/nav12.jpg);
   background-size: cover;
   height: 20vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row; }
   .encabezado .title {
     font-size: 2.5rem;
     text-shadow: 4px 4px 10px #000;
@@ -43,11 +59,14 @@ body {
   .iconos:hover {
     transform: scale(1.2); }
 
+/*banner y reference title*/
 .global-banner {
   margin: 15px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row; }
   @media (min-width: 768px) {
     .global-banner {
       margin: 30px; } }
@@ -66,111 +85,6 @@ body {
       .global-banner .global-foto {
         width: 100%;
         height: 50vh; } }
-
-.info {
-  background: #f8f9fa;
-  margin: 15px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  @media (min-width: 768px) {
-    .info {
-      flex-wrap: wrap; } }
-  @media (min-width: 1024px) {
-    .info {
-      flex-wrap: nowrap; } }
-  .info .subtt {
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Kdam Thmor Pro", sans-serif;
-    text-shadow: 1px 3px 4px #000; }
-  .info .nosotros {
-    text-align: center;
-    padding: 1.5rem;
-    font-family: "Roboto Mono", monospace; }
-  .info .foto-referencia {
-    width: 90%;
-    height: 25vh;
-    border-radius: 30px;
-    margin: 40px; }
-    @media (min-width: 768px) {
-      .info .foto-referencia {
-        width: 100%;
-        height: 40vh; } }
-    @media (min-width: 1024px) {
-      .info .foto-referencia {
-        width: 50%;
-        height: 50vh; } }
-
-.articulos-novedades {
-  text-shadow: 2px 2px 3px #000;
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Kdam Thmor Pro", sans-serif; }
-
-.articulos-ofertas {
-  text-shadow: 2px 3px 3px #000;
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Kdam Thmor Pro", sans-serif; }
-
-#carouselExampleIndicators {
-  width: 100%;
-  margin: 20px auto; }
-
-@media (min-width: 768px) {
-  #carouselExampleIndicators {
-    width: 80%;
-    margin: 20px auto; } }
-
-@media (min-width: 1024px) {
-  #carouselExampleIndicators {
-    width: 60%;
-    margin: 20px auto; } }
-
-#carouselExampleControls {
-  width: 100%;
-  margin: 20px auto; }
-
-@media (min-width: 768px) {
-  #carouselExampleControls {
-    width: 80%;
-    margin: 20px auto; } }
-
-@media (min-width: 1024px) {
-  #carouselExampleControls {
-    width: 60%;
-    margin: 20px auto; } }
-
-.caro {
-  margin: 15px;
-  padding: 30px;
-  border-radius: 40px;
-  background: #f8f9fa; }
-  @media (min-width: 768px) {
-    .caro {
-      margin: 15px;
-      padding: 30px;
-      border-radius: 40px; } }
-  @media (min-width: 1024px) {
-    .caro {
-      margin: 40px;
-      padding: 30px;
-      border-radius: 40px; } }
-
-.ofoto {
-  width: 100%;
-  height: 20vh; }
-  @media (min-width: 768px) {
-    .ofoto {
-      width: 100%;
-      height: 30vh; } }
-  @media (min-width: 1024px) {
-    .ofoto {
-      width: 100%;
-      height: 40vh; } }
 
 .global-title {
   margin: 40px;
@@ -191,11 +105,148 @@ body {
       font-size: 5rem;
       text-shadow: 2px 2px 6px #000; } }
 
+/*estilos de index y foto */
+.info {
+  background: #f8f9fa;
+  margin: 15px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  @media (min-width: 768px) {
+    .info {
+      flex-wrap: wrap; } }
+  @media (min-width: 1024px) {
+    .info {
+      flex-wrap: nowrap; } }
+  .info .subtt {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    text-shadow: 1px 3px 4px #000; }
+  .info .nosotros {
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    transition: all .5s; }
+    .info .nosotros:hover {
+      transform: scale(1.1);
+      font-size: 1.4rem; }
+  .info .foto-referencia {
+    width: 90%;
+    height: 25vh;
+    border-radius: 30px;
+    margin: 40px; }
+    @media (min-width: 768px) {
+      .info .foto-referencia {
+        width: 100%;
+        height: 40vh; } }
+    @media (min-width: 1024px) {
+      .info .foto-referencia {
+        width: 50%;
+        height: 50vh; } }
+
+/*estilos para bts carrousel*/
+#carouselExampleIndicators {
+  width: 100%;
+  margin: 20px auto; }
+
+@media (min-width: 768px) {
+  #carouselExampleIndicators {
+    width: 80%;
+    margin: 20px auto; } }
+
+@media (min-width: 1024px) {
+  #carouselExampleIndicators {
+    width: 60%;
+    margin: 20px auto; } }
+
+.caro {
+  margin: 15px;
+  padding: 30px;
+  border-radius: 40px;
+  background: #f8f9fa; }
+  @media (min-width: 768px) {
+    .caro {
+      margin: 15px;
+      padding: 30px;
+      border-radius: 40px; } }
+  @media (min-width: 1024px) {
+    .caro {
+      margin: 40px;
+      padding: 30px;
+      border-radius: 40px; } }
+
+/*estilos para imagen de carrousels*/
+.ofoto {
+  width: 100%;
+  height: 20vh; }
+  @media (min-width: 768px) {
+    .ofoto {
+      width: 100%;
+      height: 30vh; } }
+  @media (min-width: 1024px) {
+    .ofoto {
+      width: 50%;
+      height: 50vh;
+      object-fit: cover; } }
+
+/*estilos de secciones de productos de todos los html*/
+.articulos-titulo {
+  text-shadow: 2px 2px 3px #000;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Kdam Thmor Pro", sans-serif; }
+
+.contenido-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7px;
+  padding: 10px; }
+  .contenido-container .prod-foto {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; }
+  @media screen and (min-width: 768px) {
+    .contenido-container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .contenido-container {
+      grid-template-columns: repeat(2, 1fr); } }
+
+.valorant-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center; }
+  .valorant-container .valorantFoto {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    object-fit: contain; }
+    @media (min-width: 768px) {
+      .valorant-container .valorantFoto {
+        width: 100%;
+        height: 50vh; } }
+    @media (min-width: 1024px) {
+      .valorant-container .valorantFoto {
+        width: 100%;
+        height: 50vh; } }
+  @media screen and (min-width: 768px) {
+    .valorant-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .valorant-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+
+/*estilo de los titulos de productos*/
 .titleProduct-global {
   margin: 60px;
-  border-radius: 40px;
-  color: #000;
-  text-shadow: 0 5px 8px #bb06fd, 0 5px 8px #bb06fd;
   font-size: 2rem;
   text-align: center; }
   @media (min-width: 768px) {
@@ -205,6 +256,7 @@ body {
     .titleProduct-global {
       font-size: 4rem; } }
 
+/*estilos del formulario*/
 .orders {
   background: #f8f9fa;
   margin: 40px;
@@ -212,6 +264,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   flex-direction: column; }
   .orders .input-order {
     margin: 10px;
@@ -237,15 +290,12 @@ body {
     margin-top: 10px; }
   .orders .formulario {
     margin: 5px; }
-    .orders .formulario .form {
-      background: #f8f9fa;
-      padding: 5px;
-      margin: 5px;
-      outline: none;
-      border-radius: 10%;
-      border: 2px solid #5a189a;
-      box-shadow: 0 1px 15px #7b2cbf; }
+  .orders .boton {
+    background: #f8f9fa;
+    padding: 5px;
+    margin: 5px; }
 
+/*estilos del footer*/
 footer {
   height: 20vh;
   display: flex;
@@ -253,17 +303,14 @@ footer {
   align-items: center;
   background: #f8f9fa; }
 
-.sociales p {
-  text-align: center; }
-
-.sociales img:nth-child(2) {
+.social-container .ig {
   width: 48px;
   height: 48px; }
 
 .copyr {
   text-align: center;
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif; }
+  font-size: .9rem;
+  font-family: "Raleway", sans-serif; }
   @media (min-width: 768px) {
     .copyr {
       font-size: 1.5rem; } }

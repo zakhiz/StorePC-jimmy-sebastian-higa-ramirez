@@ -9,17 +9,20 @@ footer{
     align-items: center;
     background: $fondo;
 }
-.sociales p{
-    text-align: center;
+
+.social-container{
+
+    .ig{
+       width: 48px ;
+       height:48px ;
+    }    
+    
 }
-.sociales img:nth-child(2){
-    width: 48px ;
-    height:48px ;
-}
+
 .copyr{
     text-align: center;
-    font-size: 1.2rem;
-    font-family: $fontCopy;
+    font-size: .9rem;
+    font-family: $fontText;
     @media(min-width:768px){
             font-size: 1.5rem;
     }
@@ -27,3 +30,6 @@ footer{
             font-size: 1.7rem;
     }   
 }
+
+
+

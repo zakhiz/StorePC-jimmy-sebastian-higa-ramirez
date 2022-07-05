@@ -5,10 +5,8 @@
     background: $fondo;
     margin: 15px;
     border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex (wrap);
+    
     @media(min-width:768px){
            flex-wrap: wrap;
        }
@@ -25,6 +23,12 @@
         text-align: center;
         padding: 1.5rem;
         font-family: $fontText;
+        font-size: 1.2rem;
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.1);
+            font-size: 1.4rem;
+        }
     }
 
     .foto-referencia{
@@ -45,16 +49,3 @@
     }   
 }
 
-.articulos-novedades{
-    text-shadow: 2px 2px 3px $black;
-    text-align: center;
-    font-size:3rem;
-    font-family: $fontTitle;
-}
-.articulos-ofertas{
-    text-shadow: 2px 3px 3px $black;
-    font-size: 3rem;
-    text-align: center;
-    font-family: $fontTitle;
-
-}

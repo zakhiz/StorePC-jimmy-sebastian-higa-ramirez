@@ -1,15 +1,11 @@
 @import '../base/variables';
 
 
-
 .orders{
     background: $fondo;
     margin: 40px;
     padding:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(nowrap,column);
     .input-order{
         margin: 10px;
         padding: .4rem; 
@@ -22,9 +18,9 @@
     }
     .border{
         outline: none;
-        box-shadow: 0 1px 20px $shadow;
+        box-shadow: 0 1px 20px map-get($map: $colores, $key:"shadow" );
         border-radius: 5%;
-        border: 2px solid $border;
+        border: 2px solid map-get($map: $colores, $key:"border" );
         &:focus{
             padding: .9rem;
         }
@@ -42,17 +38,14 @@
       
       }
       .formulario{
+        margin: 5px; 
+    }
+    
+    .boton{
+        @extend .boton-style;
+        background: $fondo;
+        padding: 5px;
         margin: 5px;
-
-        .form{
-            background: $fondo;
-            padding: 5px;
-            margin: 5px;
-            outline: none;
-            border-radius: 10%;
-            border: 2px solid $border;
-            box-shadow: 0 1px 15px $shadow;
-        }
         
     }
 }

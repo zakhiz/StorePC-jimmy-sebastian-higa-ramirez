@@ -5,9 +5,7 @@
     background: url(../img/nav12.jpg);
     background-size: cover;
     height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 
        .title{
                 font-size: 2.5rem;
@@ -31,4 +29,17 @@
         height: 40vh;
    }
 
+}
+
+.iconos{
+    margin: 0 10px;
+    width: 70px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3px solid $black;
+    transition: transform .4s;
+
+       &:hover{
+         transform: scale(1.2);
+    }
 }
