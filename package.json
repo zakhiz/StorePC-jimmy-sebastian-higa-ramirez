@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/zakhiz/StorePC-jimmy-sebastian-higa-ramirez.git"
   },
-  "author": "",
+  "author": "jimmy sebastian higa ramirez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zakhiz/StorePC-jimmy-sebastian-higa-ramirez/issues"
@@ -304,5 +304,5 @@
     "which": "^2.0.2",
     "uri-js": "^4.4.1"
   },
-  "description": ""
+  "description": "Tienda de componentes pc y variedad de productos"
 }
