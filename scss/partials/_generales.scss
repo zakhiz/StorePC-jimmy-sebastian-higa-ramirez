@@ -9,5 +9,5 @@
 }
 
 body{
-    background: #dee2e6;
+    background: map-get($map: $colores, $key: "bodyColor" );
 }

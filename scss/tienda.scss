@@ -4,13 +4,13 @@
 
 @import './base/extends';
 
-/*resets style , fonts y background body*/
+/*reset de  estilos , fonts y body*/
 @import './partials/generales';
-/*background img, y icon home*/
+/*background img, y icono para inicio*/
 @import './partials/headerStyle/header';
-/*banner y reference title*/
+/*banner y referencias de seccion donde estas*/
 @import './partials/bannersTodos/bannerTitle';
-/*estilos de index y foto */
+/*estilos de info nosotros y foto referencia */
 @import './partials/indexEstilos/mainHome';
 /*estilos para bts carrousel*/
 @import './partials/btsCarrousels/carousel';
@@ -20,9 +20,9 @@
 @import'./partials/productosTodos/ProductosAll';
 /*estilo de los titulos de productos*/
 @import './partials/titulosProductos/titleProduct';
-/*estilos del formulario*/
+/*estilos formulario*/
 @import './partials/formulario/form';
-/*estilos del footer*/
+/*estilos footer*/
 @import './partials/redesFooter/footer';
 
 

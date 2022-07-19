@@ -4,7 +4,8 @@
 .info{
     background: $fondo;
     margin: 15px;
-    border-radius: 30px;
+    @include borderBoxshadow;
+    @include radius;
     @include flex (wrap);
     
     @media(min-width:768px){
@@ -14,13 +15,13 @@
            flex-wrap: nowrap;
        }
        .subtt{
-        text-align: center;
+        @include txtCenter;
         font-size: 3rem;
         font-family: $fontTitle;
         text-shadow: 1px 3px 4px $black;
     }
     .nosotros{
-        text-align: center;
+        @include txtCenter;
         padding: 1.5rem;
         font-family: $fontText;
         font-size: 1.2rem;
@@ -28,6 +29,7 @@
         &:hover{
             transform: scale(1.1);
             font-size: 1.4rem;
+            margin: 30px;
         }
     }
 

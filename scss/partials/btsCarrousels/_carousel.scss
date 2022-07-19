@@ -25,17 +25,19 @@
 .caro{
     margin: 15px;
     padding: 30px;
-    border-radius: 40px;
+    @include radius(15px);
     background: $fondo;
+    @include borderBoxshadow();
       @media(min-width:768px){
             margin: 15px;
             padding: 30px;
-            border-radius: 40px;
+            @include radius(20px)
        }
        @media(min-width:1024px){
-            margin: 40px;
+            margin: 25px;
             padding: 30px;
-            border-radius: 40px;
+            @include radius(25px);
+            
        }
     }
 

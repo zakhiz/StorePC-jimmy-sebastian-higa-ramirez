@@ -5,8 +5,7 @@
         box-shadow: 0 1px 15px map-get($map: $colores, $key:"shadow" );
 }
 .title-style{
-    border-radius: 40px;
     color: $black;
     font-family: $fontTitle;
-    text-shadow: 0 5px 8px map-get($map: $colores, $key:"textShadow" );
+    
 }

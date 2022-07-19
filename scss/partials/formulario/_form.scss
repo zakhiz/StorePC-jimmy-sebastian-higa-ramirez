@@ -2,19 +2,30 @@
 
 
 .orders{
-    background: $fondo;
+    background: url(../../../img/form.webp);
+   
     margin: 40px;
     padding:40px;
+    @include radius;
+    @include borderBoxshadow();
     @include flex(nowrap,column);
     .input-order{
         margin: 10px;
         padding: .4rem; 
         &::placeholder{
             font-family: 'Poppins', sans-serif;
+      
         }
+      .colu{
+        display: flex;
+        flex-direction: column;
+      }
     }
     .labeli{
         margin-top: 10px;
+        @include txtCenter;
+        display: flex;
+        flex-direction: column;
     }
     .border{
         outline: none;

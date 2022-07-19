@@ -2,128 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orders</title>
-    <meta name="author" content="Jimmy sebastian higa ramirez">
-    <meta name="description" content="gestor de envios">
-    <meta name="keywords" content="envios,gestor de envios,como hago mi envio, orden de compra">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/tienda.css">
-    <link rel="icon" href="../img/icono.jpg">
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordenes</title>
+  <meta name="author" content="Jimmy sebastian higa ramirez">
+  <meta name="description" content="gestor de envios">
+  <meta name="keywords" content="envios,gestor de envios,como hago mi envio, orden de compra">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/tienda.css">
+  <link rel="icon" href="../img/icono.jpg">
+
 </head>
 
 <body>
-    <header class="encabezado">
-        <h1 class="title">Store Pc</h1>
-    </header>
+  <header class="encabezado">
+    <h1 class="title">Store Pc</h1>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img class="iconos" src="../img/inicio.png" alt="boton para ir al inicio">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="giftCard.html">Gift Card's</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="funkoWorld.html">Funko World</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="orders.html">Orders</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <main class="main-products">
-        <form action="#" class="orders">
-            <input type="text" placeholder="Ingrese su nombre" class="input-order border">
-
-            <input type="text" placeholder="direccion"class="input-order border" >
-            <input type="number" placeholder="altura" class="input-order border">
-
-            <input type="number" placeholder="Telefono" class="input-order border">
-
-            <label for="email" class="labeli">Ingrese su email:
-                <input type="text" name="email" placeholder="aaaa@gmail.com" class="input-order border labeli">
-            </label>
-
-            <div class="input-order labeli">
-                <label for="Dia">Elegi el dia de entrega
-                    <select name="Dia" >
-                        <option value="lunes">lunes</option>
-                        <option value="martes">martes</option>
-                        <option value="miercoles">miercoles</option>
-                        <option value="jueves">jueves</option>
-                        <option value="viernes">viernes</option>
-                    </select>
-
-                </label>
-
-            </div>
-            <div class="input-order">
-                <label for="turno" >elegir turno de entrega
-                    <div>turno Mañana 8am-15pm
-                        <input type="radio" name="turno" value="maniana">
-                    </div>
-                    <div>turno tarde 15pm-22pm
-                        <input type="radio" name="turno" value="tarde">
-                    </div>
-                </label>
-            </div>
-           <div>
-            <textarea placeholder="Nota para el repartidor" class="repartidor border"></textarea>
-            <input type="submit" value="enviar" class="textarea boton" > 
-        </div>
-
-
-            <div class="input-order"> Quisieras recibir notificaciones de las ultimas ofertas y novedades
-                <input type="checkbox" name="acepta" value="1"></div>
-            <div class="formulario" >
-            <input type="submit" value="realizar envio" class="boton fontCopy">
-            <input type="reset" value="cancelar envio"  class="boton fontCopy">
-            </div>
-        </form>
-    </main>
-    <footer>
-
-      <div class="social-container">
-        <a href="https://www.instagram.com/" target="_blank">
-          <img class="ig" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="icono instagram" title="instagram">        
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <img src="https://img.icons8.com/fluency/48/undefined/twitter.png" alt="icono twitter" title="twitter"/>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" alt="icono youtube" title="youtube"/>
-        </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="icono" href="../index.html">
+        StorePC
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="skinsCounter.html">Csgo Skins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="funkoWorld.html">Mundo Funko</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="orders.html">Ordenes</a>
+          </li>
+        </ul>
       </div>
-          <h3 class="copyr">©2022 StorePC</h3>
-      <div>
-        <a href="#" target="_blank">
-          <img  src="https://img.icons8.com/color/48/000000/visa.png" alt="visa" title="visa">
-        </a>
+    </div>
+  </nav>
+  <main>
 
-        <a href="#" target="_blank">
-          <img  src="https://img.icons8.com/color/48/000000/mastercard.png" alt="mastercard" title="mastercard">
-        </a>
-        <a href="#" target="_blank">
-          <img  src="https://img.icons8.com/color/48/000000/mercado-pago.png" alt="mercado-pago" title="mercado-pago">
-        </a>       
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <form action="#" class="orders">
+
+      <input type="text" placeholder="Ingrese su nombre" class="input-order border">
+
+      <input type="text" placeholder="direccion" class="input-order border">
+      <input type="number" placeholder="altura" class="input-order border">
+
+      <input type="number" placeholder="Telefono" class="input-order border">
+
+      <label for="email" class="labeli colu">Ingrese su email:
+        <input type="text" name="email" placeholder="aaaa@gmail.com" class="input-order border labeli">
+      </label>
+
+      <div class="input-order labeli">
+        <label for="Dia" class="colu">Elegi el dia de entrega
+          <select name="Dia">
+            <option value="lunes">lunes</option>
+            <option value="martes">martes</option>
+            <option value="miercoles">miercoles</option>
+            <option value="jueves">jueves</option>
+            <option value="viernes">viernes</option>
+          </select>
+
+        </label>
+
+      </div>
+      <div class="input-order">
+        <label for="turno">elegir turno de entrega
+          <div>turno Mañana 8am-15pm
+            <input type="radio" name="turno" value="maniana">
+          </div>
+          <div>turno tarde 15pm-22pm
+            <input type="radio" name="turno" value="tarde">
+          </div>
+        </label>
+      </div>
+      <div>
+        <textarea placeholder="Nota para el repartidor" class="repartidor border"></textarea>
+
+      </div>
+
+
+      <div class="input-order"> Quisieras recibir notificaciones de las ultimas ofertas y novedades
+        <input type="checkbox" name="acepta" value="1"></div>
+      <div class="formulario">
+        <input type="submit" value="realizar envio" class="boton fontCopy">
+        <input type="reset" value="cancelar envio" class="boton fontCopy">
+      </div>
+    </form>
+  </main>
+  <footer>
+
+    <div class="social-container">
+      <a href="https://www.instagram.com/" target="_blank" class="deco">
+        <img class="ig" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="icono instagram"
+          title="instagram">
+      </a>
+      <a href="https://twitter.com/" target="_blank" class="deco">
+        <img src="https://img.icons8.com/fluency/48/undefined/twitter.png" alt="icono twitter" title="twitter" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank" class="deco">
+        <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" alt="icono youtube" title="youtube" />
+      </a>
+    </div>
+    <h3 class="copyr">©2022 StorePC</h3>
+    <div>
+      <a href="#" target="_blank" class="deco">
+        <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa" title="visa">
+      </a>
+
+      <a href="#" target="_blank" class="deco">
+        <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="mastercard" title="mastercard">
+      </a>
+      <a href="#" target="_blank" class="deco">
+        <img src="https://img.icons8.com/color/48/000000/mercado-pago.png" alt="mercado-pago" title="mercado-pago">
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
 </body>
 

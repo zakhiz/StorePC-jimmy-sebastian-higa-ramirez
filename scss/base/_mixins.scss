@@ -1,7 +1,23 @@
+
 @mixin flex ($wrap:nowrap, $direction:row){
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: $wrap;
     flex-direction: $direction;
+}
+@mixin borderBoxshadow ($ancho:3px, $difuminar: 20px){
+    border: $ancho solid map-get($map: $colores, $key: "border") ;
+    box-shadow: 0 2px $difuminar map-get($map: $colores, $key:"shadow");
+}
+@mixin radius ($radius:30px) {
+    border-radius: $radius;
+}
+@mixin txtCenter {
+    text-align: center;
+}
+@mixin bordeTopBotton {
+    border-radius: 12px;
+    border-top: 3px solid map-get($map: $colores, $key:"border" );
+    border-bottom: 3px solid map-get($map: $colores, $key:"border" );
 }

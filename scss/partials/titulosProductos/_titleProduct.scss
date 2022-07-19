@@ -3,13 +3,14 @@
 .titleProduct-global{
     margin: 60px;
     font-size: 2rem;
-    text-align: center;
+    @include txtCenter;
+    @include bordeTopBotton;
     @extend .title-style;
     
     @media(min-width:768px){
             font-size:3rem;
     }
     @media(min-width:1024px){
-            font-size: 4rem;
+            font-size: 3.5rem;
     }
 }
