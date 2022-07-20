@@ -7,7 +7,7 @@
   border: 2px solid #5a189a;
   box-shadow: 0 1px 15px #7b2cbf; }
 
-.title-style, .titleProduct-global {
+.title-style, .tituloDeCarrousel {
   color: #000;
   font-family: "Kdam Thmor Pro", sans-serif; }
 
@@ -48,18 +48,16 @@ body {
       height: 40vh; } }
 
 .icono {
-  font-size: 2em;
+  margin-right: 15px;
+  font-size: 2.2em;
   font-family: "Kdam Thmor Pro", sans-serif;
   text-decoration: none;
-  color: #7b2cbf;
-  text-shadow: 1px 2px 5px;
-  transition: all .2s; }
+  color: #000;
+  text-shadow: 2px 2px 3px #7b2cbf;
+  transition: all .1s; }
   .icono:hover {
-    transform: scale(1.1);
-    padding: 5px;
-    margin: 5px;
-    color: #7b2cbf;
-    text-shadow: 1px 2px 2px #000; }
+    color: #000;
+    text-shadow: 2px 2px 5px #7b2cbf; }
 
 /*banner y referencias de seccion donde estas*/
 .global-banner {
@@ -79,6 +77,7 @@ body {
     width: 100%;
     height: 20vh;
     border-radius: 20%;
+    object-fit: cover;
     border: 3px solid #5a189a;
     box-shadow: 0 2px 20px #7b2cbf; }
     @media (min-width: 768px) {
@@ -131,7 +130,7 @@ body {
       flex-wrap: nowrap; } }
   .info .subtt {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-family: "Kdam Thmor Pro", sans-serif;
     text-shadow: 1px 3px 4px #000; }
   .info .nosotros {
@@ -139,7 +138,7 @@ body {
     padding: 1.5rem;
     font-family: "Raleway", sans-serif;
     font-size: 1.2rem;
-    transition: all .5s; }
+    transition: all 1.5s; }
     .info .nosotros:hover {
       transform: scale(1.1);
       font-size: 1.4rem;
@@ -173,7 +172,7 @@ body {
     width: 60%;
     margin: 20px auto; } }
 
-.caro {
+.estiloDeContenedores {
   margin: 15px;
   padding: 30px;
   border-radius: 15px;
@@ -181,12 +180,12 @@ body {
   border: 3px solid #5a189a;
   box-shadow: 0 2px 20px #7b2cbf; }
   @media (min-width: 768px) {
-    .caro {
+    .estiloDeContenedores {
       margin: 15px;
       padding: 30px;
       border-radius: 20px; } }
   @media (min-width: 1024px) {
-    .caro {
+    .estiloDeContenedores {
       margin: 25px;
       padding: 30px;
       border-radius: 25px; } }
@@ -230,7 +229,10 @@ body {
     padding: 20px;
     border: 3px solid #5a189a;
     box-shadow: 0 2px 7px #7b2cbf;
-    border-radius: 13px; }
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .contenido-container .card-product .prod-foto {
       width: 100%;
       height: 20vh; }
@@ -245,13 +247,19 @@ body {
     .contenido-container .card-product .boton {
       margin-top: 10px; }
       .contenido-container .card-product .boton .buy {
-        padding: 0 10px;
+        padding: 0 50px;
         text-decoration: none;
         color: #000;
         font-family: "Kdam Thmor Pro", sans-serif;
         border: 3px solid #5a189a;
         box-shadow: 0 2px 20px #7b2cbf;
         border-radius: 10px; }
+        @media screen and (min-width: 768px) {
+          .contenido-container .card-product .boton .buy {
+            padding: 0 90px; } }
+        @media screen and (min-width: 1024px) {
+          .contenido-container .card-product .boton .buy {
+            padding: 0 90px; } }
   @media screen and (min-width: 768px) {
     .contenido-container {
       grid-template-columns: repeat(2, 1fr); } }
@@ -260,35 +268,8 @@ body {
       grid-template-columns: repeat(3, 1fr);
       gap: 10px; } }
 
-.valorant-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  justify-items: center; }
-  .valorant-container .valorantFoto {
-    width: 100%;
-    height: 50vh;
-    padding: 10px;
-    object-fit: contain; }
-    @media (min-width: 768px) {
-      .valorant-container .valorantFoto {
-        width: 100%;
-        height: 50vh; } }
-    @media (min-width: 1024px) {
-      .valorant-container .valorantFoto {
-        width: 100%;
-        height: 50vh; } }
-  @media screen and (min-width: 768px) {
-    .valorant-container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-  @media screen and (min-width: 1024px) {
-    .valorant-container {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-
 /*estilo de los titulos de productos*/
-.titleProduct-global {
+.tituloDeCarrousel {
   margin: 60px;
   font-size: 2rem;
   text-align: center;
@@ -296,10 +277,10 @@ body {
   border-top: 3px solid #5a189a;
   border-bottom: 3px solid #5a189a; }
   @media (min-width: 768px) {
-    .titleProduct-global {
+    .tituloDeCarrousel {
       font-size: 3rem; } }
   @media (min-width: 1024px) {
-    .titleProduct-global {
+    .tituloDeCarrousel {
       font-size: 3.5rem; } }
 
 /*estilos formulario*/
